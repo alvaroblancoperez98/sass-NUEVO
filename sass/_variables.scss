@@ -1,0 +1,16 @@
+$Backgroundcolor: #ccc;
+$ColorLinks: orange;
+$ColorLetra: Black;
+$fuenteArial: Arial;
+$fuenteTimesNewRoman: "Times New Roman";
+$FontTamañoNav: 18px;
+//operaciones no sabia como implementarlas y aprovecho y creo colores con operaciones
+$colorAmarillo: rgb(255, 255, 0);
+$colorAmarilloClarito: lighten($colorAmarillo, 10%);
+$colorAmarilloOscuro: darken($colorAmarillo, 10%);
+//Funciones(lighten y darken)
+$colorRosa: rgb(255, 0, 128);
+$colorRosaClarito: lighten($colorRosa, 10%);
+$colorRosaOscuro: darken($colorRosa, 10%);
+
+$coloresBucle: red, green, $colorAmarilloOscuro, $colorAmarilloClarito, $colorRosaOscuro, $colorRosaClarito, purple, black, blue, brown, $colorRosa, $colorAmarillo;

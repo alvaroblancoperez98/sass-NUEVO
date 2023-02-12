@@ -1,0 +1,11 @@
+@import "variables";
+
+
+@mixin fuenteArial {
+    font-family: $fuenteArial, sans-serif;
+}
+
+@mixin fuenteTimesNewRoman {
+    font-family: $fuenteTimesNewRoman, serif;
+}
+

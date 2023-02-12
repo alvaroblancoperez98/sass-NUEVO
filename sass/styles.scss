@@ -1,0 +1,69 @@
+@import "variables";
+@import "mixins";
+
+* {
+    background-color: $Backgroundcolor;
+    margin: 0;
+    padding: 0;
+}
+
+.article {
+    width: 20%;
+    float: left;
+}
+
+.article:last-child {
+    margin-right: 0;
+}
+
+
+.header {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+
+        a {
+            @include fuenteTimesNewRoman;
+            color: $ColorLetra;
+            text-decoration: none;
+            font-family: $fuenteArial;
+            border: 1px solid $ColorLinks;
+            padding: 20px 200px;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: $ColorLinks;
+            }
+        }
+    }
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        article {
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+
+            @for $i from 1 through length($coloresBucle) {
+                &:nth-child(#{$i}) {
+                    h2 {
+                        @include fuenteArial;
+                        color: nth($coloresBucle, $i);
+                    }
+                }
+            }
+        }
+    }
+}
