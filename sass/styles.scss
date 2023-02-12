@@ -26,15 +26,15 @@
 
         a {
             @include fuenteTimesNewRoman;
-            color: $ColorLetra;
+            color: $colorLetra;
             text-decoration: none;
             font-family: $fuenteArial;
-            border: 1px solid $ColorLinks;
+            border: 1px solid $colorLinks;
             padding: 20px 200px;
             transition: all 0.3s;
 
             &:hover {
-                background-color: $ColorLinks;
+                background-color: $colorLinks;
             }
         }
     }
