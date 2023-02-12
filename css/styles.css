@@ -44,6 +44,7 @@
 }
 .contenedor .main article {
   padding: 1.5em;
+  margin-left: 2em;
   margin-bottom: 1.5em;
 }
 .contenedor .main article:nth-child(1) h2 {

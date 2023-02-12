@@ -54,6 +54,7 @@
     .main {
         article {
             padding: 1.5em;
+            margin-left: 2em;
             margin-bottom: 1.5em;
 
             @for $i from 1 through length($coloresBucle) {
